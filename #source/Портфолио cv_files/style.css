@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24 px;
+    background-image: url("../img/ava7patterns_pattern_1756.png");
+    color: #eaeaea;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Rubik Distressed', cursive;
+    font-weight: 300;
+    line-height: 48px;
+    color:rgb(69, 226, 220);
+
+}
+.wrapper{    
+     max-width: 1100px;     
+     border: 2px solid rgb(182, 123, 198);   
+       margin: 25px auto;  
+          padding: 25px; 
+          background-color: rgba(0,0,0,0.7); 
+           } 
+ .nav{
+     background-color: rgb(103, 182, 180);
+     /* padding-top: 15px; */
+     /* padding-bottom: 15px; */
+     overflow:hidden;
+     display: flex;
+     background-image: url("../img/ava7patterns_pattern_1756.png");
+     position: sticky;
+     /*пока закомментировала закрепление навигации*/
+      top:25px;
+      z-index: 100;
+
+     }
+ .logo,
+ .nav_item
+ {
+     
+     border:2px solid rgb(199, 25, 202);
+      margin: 15px;
+      padding: 20px;
+      background-color: rgb(172, 213, 218);
+    
+          }
+.nav_item
+ {display: flex;
+  flex-basis: 90%;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.nav_item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(199, 25, 202);
+    opacity: 0.5;
+    transition:all 0.4s;
+    display: flex;
+    align-items:center;
+    
+}
+.nav_item li
+ {
+    list-style:none;
+    transition:all 0.4s;
+}
+.nav_item a.active
+{
+color:red;
+}
+.nav_item a:hover
+{
+    opacity:1;
+}
+.nav_item li:hover
+ {
+    transform: scale(1.2);
+
+ }
+ .logo
+ {
+    border-radius:15px;
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    background-image: url("../img/Мое\ фото.png");
+    background-size:cover;
+    /* background-position: -35px -50px; */
+    display: flex;
+  
+    /* justify-content:flex-end;  */
+    align-items:flex-start;
+    color:rgb(86, 17, 206);
+    font-size: 10pt;
+    font-style:italic;
+    font-weight: bold;
+    text-align: right;
+    border:2px solid rgb(199, 25, 202);
+    transform: scale(1);
+ }
+ .logo:hover{
+    transform: scale(1.5);
+ }
+ /* .logo img
+ {
+    width: 100%;
+    height:100%;
+ } */
+ .nav_item .fa-fs{
+    font-size: 13px;}
+.main{
+    display: flex;
+}   
+ .block_left,
+.block_right{
+    width: 50%;
+    margin: 25px;
+    position: relative;
+ }
+
+ .block_left img{
+    display: block;
+    width: 100%;
+    border-radius:250px 0 250px 0;
+    background-image: linear-gradient(to top, #30cfd0 0%, #4e09a3 100%);
+    padding: 25px;
+  }
+  .block_left .info{
+    
+    background-color: rgb(124, 103, 141,0.8);;
+    border-radius:170px 0 150px 0;
+    padding: 50px;
+    position: absolute;
+    bottom: 15px;
+    width:65%;
+    height: 35%;
+    color:#30cfd0 ;
+    /* right: 15px; */
+    left: 210px;
+    font-style: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    
+  }
+  .social_item{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    list-style: none;
+    transition:all 0.4s;
+
+  }
+  .social_item li:hover{
+    transform:scale(1.2);
+  }
+  .social_item a{
+    text-decoration: none;
+    color:#a5a5a5;
+    font-size:52px;
+  }
+ .block_right {
+  line-height: 200%;
+  padding-top: 10%;
+ }
+ .block_left .info .btn{
+display:block;
+background: rgb(244, 244, 55);
+font-size: 12px;
+font-weight: bold;
+padding: 10px;
+border:5px solid #4e09a3;
+color:#4e09a3;
+width:50%;
+border-radius:25px;
+margin: 0 auto;
+transition: 0.4s;
+
+ }
+
+ .block_left .info .btn:hover{
+  background-color: #4e09a3;
+  color:rgb(244, 244, 55);
+  border-color: rgb(244, 244, 55);
+ }
+ .work{
+  display:flex;
+  background-color: rgb(124, 103, 141,0.8);
+ }
+ .work .card{
+  width:25%;
+  display:flex;
+  flex-direction:column;
+  padding: 10px;
+ }
+ .work .card img{
+  width:50%;
+  border-radius:50%;
+ }
+
+
